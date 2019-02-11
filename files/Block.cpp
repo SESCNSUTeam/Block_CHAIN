@@ -9,6 +9,7 @@ ostream &operator<<(ostream& stream, const Block &block) {
 	stream << block.nonce << " " << block.hash << endl;
 	return stream;
 }
+
 Block buildBlock() {
 	Block b;
 	b.number = 0;

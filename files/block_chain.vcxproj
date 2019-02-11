@@ -127,6 +127,9 @@
     <ClCompile Include="Block.cpp" />
     <ClCompile Include="Crypto.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Source.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Block.h" />
