@@ -1,14 +1,20 @@
 #include "Main.h"
 
-using namespace std;
+std::string convertBlock(Block block) {
 
-ostream &operator<<(ostream& stream, const Block &block) {
-	stream << block.time << endl;
-	stream << block.number << " " << block.computationPower << endl;
-	stream << block.prevHash << endl << block.data << endl;
-	stream << block.nonce << " " << block.hash << endl;
-	return stream;
+
+	return NULL;
 }
+
+
+std::ostream &operator<<(std::ostream& stream, const Block &block) {
+	stream << block.time << std::endl;
+	stream << block.number << " " << block.computationPower << std::endl;
+	stream << block.prevHash << std::endl << block.data << std::endl;
+	stream << block.nonce << " " << block.hash << std::endl;
+	return stream;
+};
+
 Block buildBlock() {
 	Block b;
 	b.number = 0;

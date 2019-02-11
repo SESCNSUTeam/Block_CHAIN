@@ -1,11 +1,12 @@
 #pragma once
+#include "Main.h"
 struct Block {
 	int number;
 	int nonce;
 	int computationPower;
-	string prevHash;
-	string data;
-	string hash;
+	std::string prevHash;
+	std::string data;
+	std::string hash;
 	time_t time;
 	Block *prev;
 }; 
