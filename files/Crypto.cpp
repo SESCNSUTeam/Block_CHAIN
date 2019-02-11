@@ -42,3 +42,13 @@ string binHash(string hexHash) {
 	//cout << binhash << endl;
 	return binhash;
 }
+
+string openFile(string dir) {
+	string str = "";
+	ifstream fin(dir);
+	string s;
+	while (fin >> s) {
+		str += s;
+	}
+	return str;
+}
