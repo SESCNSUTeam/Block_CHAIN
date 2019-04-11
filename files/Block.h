@@ -1,5 +1,6 @@
 #pragma once
-#include "Main.h"
+#include "external_headers.h"
+
 struct Block {
 	int number;
 	int nonce;
@@ -8,8 +9,10 @@ struct Block {
 	std::string data;
 	std::string hash;
 	time_t time;
-	Block *prev;
 }; 
+
 Block buildBlock();
+Block convertStringToBlock(std::string hexBlock);
 
 std::ostream &operator<<(std::ostream& stream, const Block &block);
+std::string convertBlockToString(Block block);
